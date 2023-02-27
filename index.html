@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+        body{
+            background-color: #090909;
+        }
+        .top{
+            width: 1342px;
+            height: 120px;
+            border: 2px sloid black;
+            background-color: #1b1b1b;
+            display: flex;
+            flex-direction: column;
+            margin-left: -8px;
+            margin-top: -10px;
+            box-shadow: 0 8px 12px #0003
+
+        }
+        .top>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        .top img{
+            width: 80px;
+            height: 80px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        .box{
+            margin-left: 130px;
+            margin-top: 15px;
+            width: 700px;
+            height: 25px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 20px;
+            background: rgba(221,221,221,.12);;
+            border-radius: 10px;
+            align-items: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .box:hover input{
+            width: 400px;
+            text-align: center;
+        }
+        .box input{
+            width: 0;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            transition: 0.8s;
+            background: transparent;
+        }
+         .box a .fas{
+            color: #1daf;
+            font-size: 18px; 
+        }
+        ::placeholder{
+            color: white;
+        }
+        .box a{
+            margin-top: 200px;
+        }
+        .anchor{
+            display: flex;
+            padding: 5px 100px;
+            justify-content:flex-start;
+            align-items: center;
+        }
+        .anchor a{
+            margin-left: 10px;
+            font-size: small;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            /* font-family:Roboto ; */
+        }
+        .anchor a:hover{
+            color: goldenrod;
+        }
+         /* a:visited{
+            color: goldenrod;
+        } */
+        .bottom{
+            display: flex;
+           
+        }
+        .movies{
+            width: 150px;
+            /* height: 214px; */
+            /* border: 2px solid white; */
+            margin-left: 60px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+
+        }
+        h2{
+            color: #fff;
+            font-size: 22px;
+            margin-left: 60px;
+        }
+        img{
+            width: 150px;
+            cursor: pointer;
+        }
+        h5{
+            color: #fff;
+            margin-top: 2px;
+            font-size: 15px;
+            text-align: left;
+            font-weight: inherit;
+            cursor: pointer;
+        }
+        h6{
+            color: #aaa;
+            margin-top: -20px;
+            font-size: 14px;
+            font-weight: inherit;
+        }
+    </style>
+</head>
+<body>
+      <!-- main top div  -->
+    <div class="top">
+        <div class="logoNsearch">
+            <!-- pvr logo -->
+            <img src="https://zeevector.com/wp-content/uploads/LOGO/PVR-Cinemas-Logo-PNG-HD.jpg" alt="">
+           <!-- Searchbox started here -->
+            <div class="box">
+                <form action="https://www.google.com/Search" method="get">
+                    <input type="text" placeholder="Search movie or theaters..." name="q" >
+                    <a href="#">
+                        <i class="fas fa-search" ></i>
+                    </a>
+                  
+            </div>
+            </form>
+        </div>
+        <!-- anchor tag started here -->
+        <div class="anchor">
+            <a href="https://www.pvrcinemas.com/pvr/format/ice">ICE</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/imax">IMAX</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dxhttps://www.pvrcinemas.com/pvr/format/4dx">4DX</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">Playhouse</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">GOLD</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">LUXE</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">P[XL]</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">ONYX</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">Drive-in</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">Director's Cut</a>
+            <a href="https://www.pvrcinemas.com/pvr/format/4dx">Oscar Pass</a>
+          
+        </div>
+        
+    </div>
+
+    <!-- bottom part started from here -->
+    <h2>Movie Library</h2>
+    <div class="bottom">
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00007892.jpg"  alt="">
+        <h5>Fast And Furious7:The Fate of the Furious</h5>
+        <h6>English. ACTION .2015</h6>
+        
+      </div>
+      
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00017697.jpg" alt="">
+        <h5>Fast And Furious 9 : The Fast Saga</h5>
+        <h6>English. ACTION .2019</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00010449.jpg" alt="">
+        <h5>Fast And Furious8:Hobbs And Shaw</h5>
+        <h6>English. ACTION .2017</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00012767.jpg" alt="">
+        <h5>Karwaan</h5>
+        <h6>Hindi. DRAMA .2018</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013266.jpg" alt="">
+        <h5>Pihu</h5>
+        <h6>Hindi. DRAMA .2018</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013022.jpg" alt="">
+        <h5>Kedarnath</h5>
+        <h6>Hindi. DRAMA .2018</h6>
+      </div>
+      
+
+    </div>
+   
+    <div class="bottom">
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013746.jpg" alt="">
+        <h5>Sonchirya</h5>
+        <h6>Hindi. DRAMA .2019</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013273.jpg" alt="">
+        <h5>Uri</h5>
+        <h6>Hindi. ACTION .2019</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013556.jpg" alt="">
+        <h5>Mard Ko Dard Nahi Hota</h5>
+        <h6>Hindi. ACTION .2019</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00015358.jpg" alt="">
+        <h5>The Sky is Pink</h5>
+        <h6>Hindi. DRAMA .2019</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00015342.jpg" alt="">
+        <h5>Bhangra Paa Le</h5>
+        <h6>Hindi. DRAMA .2020</h6>
+      </div>
+      <div class="movies">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/app/movies/1/402x516/HO00013482.jpg" alt="">
+        <h5>Jalebi-The Everlasting Taste of Love</h5>
+        <h6>Hindi. DRAMA .2018</h6>
+      </div>
+      
+
+    </div>
+</body>
+</html>
